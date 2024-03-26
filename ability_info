@@ -1,0 +1,130 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ability Info</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="back-to-home">
+    <a href="index.html">← Back to Home</a>
+</div>
+
+<div class="container">
+
+
+<h1 id="Ability Info">Abilities</h1>
+
+
+<p>
+Abilities are a special action. Most abilities require a dice roll, but not all. Some have specific targets for their effects and some do not, depending. Most abilities have an energy cost. 
+</p>
+<h2>Ability Roll</h2>
+
+
+<p>
+When you are made to roll for an ability, you roll 3d6 + [Corresponding Core Bonus] + [Advantage Bonus] vs a target’s Threshold. 
+</p>
+<h2>Targets</h2>
+
+
+<p>
+The concept of "targets" refers to the focus of an action, whether it's an attack, a spell, a skill attempt, or any other directed effort within the game. Targets can be enemy combatants, allies, objects, or even specific locations within the environment.
+</p>
+<p>
+Types of Targets:
+</p>
+<ul>
+
+<li>Single Target: Actions aimed at a specific individual or object. Precision is key, and effects are concentrated on one entity.
+
+<li>Multiple Targets: Some abilities allow for affecting multiple entities within a specified range or area. These are ideal for handling groups or strategically influencing the battlefield.
+
+<li>Area of Effect (AoE): Targets within a designated area, often used for spells or area-based attacks. The effect applies uniformly within this zone, impacting all within its bounds.
+
+<li>Self: Some abilities or effects target the user, enhancing their abilities or providing protection.
+</li>
+</ul>
+<p>
+Other Stuff:
+</p>
+<ul>
+
+<li>Line of Sight: For most actions, a clear line of sight to the target is necessary. Obstructions can prevent targeting or affect the effectiveness of an action.
+</li>
+</ul>
+
+<li>Range: Different actions have varying ranges. Players must be within the effective range to target successfully.
+<h2>Time Limits of Effects</h2>
+
+
+<p>
+When an ability says something like “for the next minute X happens” or something like that, what it means is that the effect happens for the next ten rounds, including the round that effect was initiated.
+</p>
+<h2>Ability Stuff</h2>
+
+
+<p>
+<strong>Damaging</strong>
+</p>
+<p>
+Abilities categorized under Damaging directly inflict harm upon foes. These can vary from physical strikes to magical attacks, all designed to reduce an enemy's health points (HP). Mastery in damaging abilities often leads to increased damage output or additional effects upon hitting the target.
+</p>
+<p>
+<strong>Attack</strong>
+</p>
+<p>
+The Attack trait denotes abilities that require a confrontation with a target, typically involving a roll against the target’s Agility Threshold. These are combat abilities.
+</p>
+<p>
+<strong>Control</strong>
+</p>
+<p>
+Abilities with the Buff/Debuff trait either enhance an ally's capabilities (buffs) or impair an enemy's effectiveness (debuffs). These abilities can turn the tide of battle by boosting your party's Strength or weakening your adversaries.
+</p>
+<p>
+<strong>Support</strong>
+</p>
+<p>
+<strong>Weapon</strong>
+</p>
+<p>
+Weapon abilities are those that rely on a character's equipped weapon to execute. The effects and damage of these abilities are often determined by the weapon's attributes, allowing for diverse combat strategies based on equipment choice.
+</p>
+<p>
+<strong>Magical</strong>
+</p>
+<p>
+Magical abilities draw upon the ancient energies of Terra Megalithia, allowing characters to cast spells that can heal, harm, protect, or manipulate the environment. Mastery in magical abilities can unlock powerful effects and spell combinations.
+</p>
+<p>
+<strong>Utility</strong>
+</p>
+<p>
+Abilities categorized under Utility provide characters with non-combat advantages, aiding in navigation, exploration, problem-solving, and enhancing the party's ability to interact with the world around them. Mastery in utility abilities allows for creative solutions to obstacles, the gathering of critical information, and the avoidance of direct confrontations.
+</p>
+<h2>Damage of Abilities</h2>
+
+
+<p>
+See the Damage Calculation of Weapons and Abilities section of the Damage section of this document.
+</p>
+<h2>Stacking Duration Effects of Abilities</h2>
+
+
+<p>
+When an ability has a duration for its effects and that ability is performed on the same target again, the duration for that ability simply resets to its initial duration.
+</p>
+<h2>When Damage is a Result of a Single Roll Against Multiple Targets</h2>
+
+
+<p>
+When an ability targets more than one target and wants a single roll against all targets, the damage of that ability is the same for all targets.
+</p>
+
+</div>
+</body>

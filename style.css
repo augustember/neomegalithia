@@ -1,21 +1,19 @@
 body {
   font-family: Arial, sans-serif;
-  font-color: white
+  color: black; /* Corrected property name from font-color to color */
   line-height: 1.6;
   margin: 0;
-  padding: 0;
-  padding: 20px;
+  padding: 20px; /* This padding applies to the body, potentially causing layout issues */
   background: #000000;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 800px;
   margin: auto;
   background: #ddfacd;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  
 }
 
 h1, h2, h3 {
@@ -25,108 +23,98 @@ h1, h2, h3 {
 p {
   margin-bottom: 20px;
 }
+
 table {
-  width: 100%; /* Adjust as necessary, ensures the table stretches to the container width */
-  border-collapse: collapse; /* Eliminates space between borders */
-  margin-top: 20px; /* Adds some space above the table for separation */
-  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for depth */
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 td, th {
-  border: 1px solid #ddd; /* Light grey border */
-  text-align: left; /* Aligns text to the left; adjust as needed */
-  padding: 8px; /* Adds padding inside each cell for text readability */
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
   vertical-align: top;
-  /*background-color: #ffffff;*/
 }
 
 th {
-  background-color: #f4f4f4; /* Light grey background for header cells */
-  color: #333; /* Dark grey text color for contrast */
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 tr:nth-child(even) {
-  background-color: #f9f9f9; /* Zebra striping for rows */
+  background-color: #f9f9f9;
 }
 
-/* Enhances readability for links within the table */
 table a {
-  color: #0066cc; /* Blue color for links */
-  text-decoration: none; /* Removes underline from links */
+  color: #0066cc;
+  text-decoration: none;
 }
 
 table a:hover {
-  text-decoration: underline; /* Adds underline on hover for visual feedback */
+  text-decoration: underline;
 }
 
-/*
-tr:first-child td {
-  font-weight: bold;
-}  */
-
-
-
-/* Responsive adjustments for smaller screens, optional */
 @media screen and (max-width: 600px) {
   table {
-    width: 100%; /* Adjust table width for smaller screens */
+    width: 100%;
+  }
+  body {
+    padding: 0; /* Remove padding to prevent content from extending beyond the viewport */
   }
 }
 
 table img {
-  width: 100%; /* Makes the image width responsive to the cell size */
-  height: auto; /* Maintains the aspect ratio */
- 
-  /* Optional: Further adjustments */
-  border-radius: 4px; /* Adds rounded corners to the images */
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
 
 .bhome {
-  text-align: center; /* Centers the link horizontally */
-  margin-bottom: 20px; /* Adds space between this div and the main content container */
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.bhome{
-  display: inline-block; /* Allows setting padding and margin */
-  background-color: #007bff; /* Example blue background, adjust as needed */
-  color: #ffffff; /* White text color */
-  padding: 10px 20px; /* Adds space around the text */
-  border-radius: 5px; /* Rounds the corners for a button-like appearance */
-  text-decoration: none; /* Removes the underline from the link */
-  font-weight: bold; /* Makes the text bold */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
+.bhome a { /* Assuming .bhome is a container for an <a> element */
+  display: inline-block;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
 .ability {
-    background-color: #f9f9f9; /* Light grey background to distinguish the abilities */
-    padding: 15px; /* Padding inside each ability section for space */
-    margin-bottom: 20px; /* Margin at the bottom to separate each ability */
-    border-radius: 5px; /* Rounded corners for a modern look */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .ability h3 {
-    color: #007bff; /* A blue color for ability titles to make them stand out */
-    margin-top: 0; /* Removes the default top margin */
-    margin-bottom: 10px; /* Adds some space below the title */
+  color: #007bff;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .ability p {
-    margin: 5px 0; /* Tightens the paragraph spacing */
-    line-height: 1.5; /* Improves readability with more space between lines */
+  margin: 5px 0;
+  line-height: 1.5;
 }
 
-/* Optional: Adds a hover effect to each ability section for interactive feedback */
 .ability:hover {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 li {
-  margin-left: 20px; /* Adds space outside the <li>, moving it to the right */
+  margin-left: 20px;
 }
 
 .resized-image {
-    width: 50%;
-    /* height is auto to maintain aspect ratio */
-    height: auto;
+  width: 50%;
+  height: auto;
 }

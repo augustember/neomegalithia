@@ -123,3 +123,9 @@ table img {
 li {
   margin-left: 20px; /* Adds space outside the <li>, moving it to the right */
 }
+
+.resized-image {
+    width: 50%;
+    /* height is auto to maintain aspect ratio */
+    height: auto;
+}

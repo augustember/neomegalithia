@@ -129,3 +129,24 @@ li {
   width: 50%;
   height: auto;
 }
+
+
+/* Unvisited links */
+a:link {
+    color: Cyan; /* Blue color for unvisited links */
+}
+
+/* Visited links */
+a:visited {
+    color: Black; /* Purple color for visited links */
+}
+
+/* Mouse over links */
+a:hover {
+    color: red; /* Red color for mouse over links */
+}
+
+/* Selected links */
+a:active {
+    color: green; /* Green color for active links */
+}

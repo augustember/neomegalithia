@@ -36,6 +36,7 @@ td, th {
   text-align: left; /* Aligns text to the left; adjust as needed */
   padding: 8px; /* Adds padding inside each cell for text readability */
   vertical-align: top;
+  /*background-color: #ffffff;*/
 }
 
 th {
@@ -56,6 +57,13 @@ table a {
 table a:hover {
   text-decoration: underline; /* Adds underline on hover for visual feedback */
 }
+
+/*
+tr:first-child td {
+  font-weight: bold;
+}  */
+
+
 
 /* Responsive adjustments for smaller screens, optional */
 @media screen and (max-width: 600px) {

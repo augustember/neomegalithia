@@ -4,15 +4,19 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 20px; /* This padding applies to the body, potentially causing layout issues */
-  background: #000000;
+  background: SlateGray;
   text-align: left;
 }
 
 .container {
+	margin-left: 0;
+	max-width: 800px;
+	min-width: 800px;
+    float: left;
+    float: left;
 text-align: left;
-  margin: auto;
   background: #ddfacd;
-  padding: 20px;
+  padding: 50px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -26,6 +30,7 @@ p {
 }
 
 table {
+	text-align: left;
   max-width: 800px;
   width: 100%;
   margin: auto;

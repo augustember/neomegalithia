@@ -133,12 +133,12 @@ li {
 
 /* Unvisited links */
 a:link {
-    color: Cyan; /* Blue color for unvisited links */
+    color: Black; /* Blue color for unvisited links */
 }
 
 /* Visited links */
 a:visited {
-    color: Black; /* Purple color for visited links */
+    color: #FF6347; /* Purple color for visited links */
 }
 
 /* Mouse over links */

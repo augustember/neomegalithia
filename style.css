@@ -79,14 +79,15 @@ table img {
   border-radius: 4px;
 }
 
-.bhome {
+.back-to-home {
+max-width: 600px
   text-align: center;
   margin-bottom: 20px;
 }
 
-.bhome a { /* Assuming .bhome is a container for an <a> element */
+.back-to-home a { /* Assuming .bhome is a container for an <a> element */
   display: inline-block;
-  background-color: #007bff;
+  background-color: black;
   color: #ffffff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -138,8 +139,7 @@ a:link {
 
 /* Visited links */
 a:visited {
-    color: #FF6347; /* Purple color for visited links */
-}
+    color: #8B0000
 
 /* Mouse over links */
 a:hover {

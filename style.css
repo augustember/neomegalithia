@@ -131,6 +131,10 @@ li {
   height: auto;
 }
 
+a {
+    font-size: 1.5em; /* Sets the font size to 1.25 times the size of the current font context */
+}
+
 
 /* Unvisited links */
 a:link {

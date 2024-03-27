@@ -133,6 +133,7 @@ li {
 
 a {
     font-size: 1.5em; /* Sets the font size to 1.25 times the size of the current font context */
+	text-decoration: none; /* Removes underline from all links */
 }
 
 

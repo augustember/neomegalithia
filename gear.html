@@ -19,12 +19,12 @@
 <p>You have limited slots for particular types of equipable items:</p>
 <ul>
     <li>Head slot</li>
-    <li>2 hand slots</li>
-    <li>1 shoes slot</li>
-    <li>1 armor slot</li>
-    <li>2 relic slots</li>
-    <li>1 glove slot</li>
-    <li>1 strap slot</li>
+    <li>2 Hand Slots</li>
+    <li>1 Shoes Slot</li>
+    <li>1 Armor Slot</li>
+    <li>2 Relic Slots</li>
+    <li>1 Glove Slot</li>
+    <li>1 Strap Slot</li>
 </ul>
 <h2>Encumbrance</h2>
 <p>Items have an encumbrance value. Exceeding your encumbrance capacity, determined by your species and gear effects, results in penalties to ability rolls, Agility skill checks, and reduced movement speed by half.</p>
@@ -33,23 +33,25 @@
 <h2>Weapon Traits and Damage</h2>
 <p>Weapons have traits defining their use and effects in combat, such as Melee, Ranged, Thrown, and more, including:</p>
 <ul>
-    <li>Base Damage: A static number added to attack roll damage.</li>
-    <li>Light/Heavy: Affects throw range and required stat for rolls.</li>
-    <li>Small/Big: Dictates one-handed or two-handed use.</li>
-    <li>Range X: Specifies maximum range in feet for ranged attacks.</li>
-    <li>Strength/Wisdom-Based: Ties effectiveness to character stats.</li>
-    <li>Recall: Allows thrown weapons to return to the wielder.</li>
+    <li>Base Damage: The damage numbers a weapon does before you add the damage from your Core Bonus.</li>
+    <li>Small/Big: Dictates one-handed or two-handed use. Small equipment take up 1 Hand Slot while Big equipment take up 2 Hand Slots.</li>
+    <li>Range X [Melee/Ranged]: Specifies maximum range in feet for ranged attacks. It also specifies if that specified range is intended for a Melee or Ranged ability. </li>
+    <li>Recall: Allows thrown weapons to return to the wielder when thrown. Weapons without this tag must be retrieved from their target.</li>
+	<li>Entangling</li>Weapons with this trait can restrain targets on a successful hit, preventing them from moving away without first passing a Strength or Agility roll against your weapon's difficulty threshold as a Standard Action.</li>
+	<li>Ammunition: Weapons requiring ammunition need to be reloaded after each attack, which requires an Extra Action. You must have the specified type of ammunition in your inventory. Each attack reduces your ammunition count by one. Ammunition can be replenished through purchases in towns or crafting. 
 </ul>
 <h2>Armor Traits</h2>
 <p>Armor's benefits apply only while worn and may impact movement speed and equip slots:</p>
 <ul>
     <li>Heavy: Reduces movement speed by 5 feet.</li>
     <li>Torso: Occupies the torso slot.</li>
-    <li>Held: Takes up a hand slot.</li>
+    <li>Held: Takes up 1 hand slot.</li>
     <li>Strapped: Limited to one arm.</li>
 </ul>
 
 
+<h2>Retrieving Weapons</h2>
+Weapons without the Recall tag fall to the ground when you use them as a ranged weapon, such as the spear. When that happens, those weapons fall to the ground on space adjacent to the last enemy you targeted with that ability. If you used an ability which targets several targets at once, the weapon falls in space of the Game Master's disgression near one of the targets you used that ability on.
 
 <h1>Weapon and Armor List</h1>
 
@@ -76,7 +78,7 @@
    <td>Punch/Kick
 </p>
    </td>
-   <td>Melee, Range 5 ft
+   <td>Range 5 ft(Melee)
 </p>
    </td>
    <td>2/4
@@ -87,10 +89,10 @@
    </td>
   </tr>
   <tr>
-   <td>Staff
+   <td>Quarterstaff
 </p>
    </td>
-   <td>Melee,  Range 10 ft, 
+   <td>Range 10 ft(Melee)/30 ft(Ranged), 
 </p>
    </td>
    <td>3/6 Blunt Damage
@@ -104,7 +106,7 @@
    <td>Mace
 </p>
    </td>
-   <td>Melee, Heavy
+   <td>Range 5 ft(Melee)/15 ft(Ranged)
 </p>
    </td>
    <td>4/8 Blunt Damage
@@ -118,7 +120,7 @@
    <td>Dagger
 </p>
    </td>
-   <td>Melee, Light, Thrown, Small
+   <td>Melee, Range 5 ft(Melee)/40 ft(Ranged)
 </p>
    </td>
    <td>2/4 Sharp Damage
@@ -132,7 +134,7 @@
    <td>Big Hammer
 </p>
    </td>
-   <td>Melee, Big
+   <td>Range 5 ft(Melee)/15 ft(Ranged), Big
 </p>
    </td>
    <td>5/10 Blunt Damage
@@ -146,7 +148,7 @@
    <td>Normal Sized Sword
 </p>
    </td>
-   <td>Melee, Small
+   <td>Range 5 ft(Melee)/20 ft(Ranged), Small
 </p>
    </td>
    <td>3/6 Sharp Damage
@@ -160,7 +162,7 @@
    <td>Oversized Sword
 </p>
    </td>
-   <td>Melee, Big, Heavy
+   <td>Range 5 ft(Melee)/10 ft(Ranged), Big
 </p>
    </td>
    <td>5/10 Sharp Damage
@@ -174,7 +176,7 @@
    <td>Spear
 </p>
    </td>
-   <td>Melee, Range 10 ft, Light, Thrown
+   <td>Melee, Range 10 ft(Melee)/30 ft(Ranged), Small
 </p>
    </td>
    <td>3/6 Sharp Damage
@@ -188,7 +190,7 @@
    <td>Hatchet
 </p>
    </td>
-   <td>Melee, Small, Thrown
+   <td>Range 5 ft(Melee)/40 ft(Ranged), Small
 </p>
    </td>
    <td>2/4 Sharp Damage
@@ -202,8 +204,7 @@
    <td>Big Axe
 </p>
    </td>
-   <td>Melee, Big, Heavy
-</p>
+   <td>Range 5 ft(Melee)/15 ft(Ranged), Big
    </td>
    <td>4/8 Sharp Damage
 </p>
@@ -216,7 +217,7 @@
    <td>Bolas
 </p>
    </td>
-   <td>Entangling, Small, Thrown, Retrieve
+   <td>30 ft(Ranged), Entangling, Small
 </p>
    </td>
    <td>–
@@ -244,7 +245,7 @@
    <td>Boomerang
 </p>
    </td>
-   <td>Boomerang Attack, Small, Light, Thrown, Recall
+   <td>Range 5 ft(Melee)/40 ft(Ranged), Small,Recall
 </p>
    </td>
    <td>2/4 Blunt Damage

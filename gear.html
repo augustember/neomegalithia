@@ -17,8 +17,7 @@
 
 
 <h2>Item Slots</h2>
-<p>You have a certain number of Item Slots. Items are either Big or Small, where you may stack 10 single type of Small Item (such as multiple good potions) in a single Item Slot, but only 1 of a single type of Big Item. You may not carry more unique items than you have slots for. </p>
-
+<p>You have a certain number of Item Slots. Items are either Big, Medium or Small. 1 Big Item takes up 2 of your Item Slots.  Medium Items take up 1 of your Item Slots. Small Items can be stacked up to a certain quantity in a single slot. For example, you may carry up to 12 potions in a single Item Slot or 24 arrows in a Single Item Slot. The number you are allowed stack stack for a Small Item is designated [Item Name](X) where X is how many of that small unique item you are allowed to carry in a single slot. An Item Slot may not share more than one unique item. For example, you may not have a good potion share a slot with a quiver of arrows. </p>
 
 
 
@@ -41,7 +40,7 @@ Using and interacting with any of these is an extra action.
    </td>
    <td>Restores your current HP by an amount equal to half its maximum.
    </td>
-   <td>Small
+   <td>Small(12)
    </td>
   </tr>
   
@@ -52,7 +51,7 @@ Using and interacting with any of these is an extra action.
    </td>
    <td>Cures poison for a target.
    </td>
-   <td>Small
+   <td>Small(12)
    </td>
   </tr>
   <tr>
@@ -60,7 +59,7 @@ Using and interacting with any of these is an extra action.
    </td>
    <td>Restores  of your current EP by a value equal to half its maximum.
    </td>
-   <td>Small
+   <td>Small(12)
    </td>
   </tr>
   
@@ -91,7 +90,7 @@ Use of these is a standard action. These can be used for an unlimited number of 
    </td>
    <td>Allows you to see in the dark when lit.
    </td>
-   <td>Small
+   <td>Medium
    </td>
   </tr>
   <tr>
@@ -107,7 +106,7 @@ Use of these is a standard action. These can be used for an unlimited number of 
    </td>
    <td>Allows you to light fires. Costs 1 energy to use.
    </td>
-   <td>Small
+   <td>Medium
    </td>
   </tr>
   <tr>
@@ -115,7 +114,7 @@ Use of these is a standard action. These can be used for an unlimited number of 
    </td>
    <td>Grants a +4 Advantage Bonus to tech rolls when you use this with that.
    </td>
-   <td>Small
+   <td>Medium
    </td>
   </tr>
   <tr>
@@ -123,7 +122,7 @@ Use of these is a standard action. These can be used for an unlimited number of 
    </td>
    <td>Grants a +4 Advantage Bonus to medicine rolls when you use this for that.
    </td>
-   <td>Small
+   <td>Medium
    </td>
   </tr>
 </table>
@@ -133,22 +132,19 @@ Use of these is a standard action. These can be used for an unlimited number of 
 <p>Pieces of gear, including weapons, relics, and armor, grant certain effects and must be equipped to provide their benefits.</p>
 <h2>Switching Equipment</h2>
 <p>Equipping or switching gear during Fast Times costs 1 extra action per piece of equipment being changed.</p>
+
 <h2>Equipment and Equipment Slots</h2>
 <p>You have limited Equip Slots for particular types of equippable items. These slots are different than your normal Item Slots. Item Slots are for what you are carrying, and Equipment Slots are for what you have ready to use, such as armor and weapons. Items which you have equipped do not affect your Item Slots. The Equipment Slots are:</p>
 <ul>
     <li><b>Head slot:</b> For headgear such as helmets and hats.</li>
-    <li><b>2 Hand Slots:</b> For things like weapons and shields wielded with your hands. Big items take up 2 Hand Slots, while Small items only take up.</li>
-    <li><b>1 Shoes Slot:</b> For things like shoes and boots.</li>
-    <li><b>1 Armor Slot:</b> For armor going over your torso.</li>
+    <li><b>2 Hand Slots:</b> For things like weapons and shields wielded with your hands. Big items take up 2 Hand Slots, while Small items only take up 1.</li>
+    <li><b>1 Torso Slot:</b> For armor going over your torso.</li>
     <li><b>2 Relic Slots:</b> For accessories such as necklaces or rings which grant certain effects while wearing them.</li>
-    <li><b>1 Glove Slot:</b> For gloves.</li>
-    <li><b>1 Strap Slot:</b> For items which have you strap something to your arm or leg.</li>
-</ul>
-
+</ul> <!-- Ensure this closing tag is present -->
 
 
 <h1>Weapons</h1>
-<p>Weapons, crucial for attack abilities, must be equipped to use. Their damage, traits, and compatibility with abilities vary widely.</p>
+<p>Weapons must be equipped to use. Their damage, traits, and compatibility with abilities vary widely.</p>
 <h2>Weapon Properties</h2>
 <p>Weapons have traits defining their use and effects in combat, such as Melee, Ranged, Thrown, and more, including:</p>
 <ul>
@@ -168,220 +164,102 @@ Weapons that do not possess the Recall trait and are used in ranged attacks must
 
 <h2>List of Weapons</h2>
 
-
-
 <table>
-
-   <td><strong>Weapon</strong>
-</p>
-   </td>
-   <td><strong>Properties</strong>
-</p>
-   </td>
-   <td><strong>Damage</strong>
-</p>
-   </td>
-   <td><strong>Encumbrance</strong>
-</p>
-   </td>
   <tr>
-   <td>Punch/Kick
-</p>
-   </td>
-   <td>Range 5 ft(Melee)
-</p>
-   </td>
-   <td>2/4
-</p>
-   </td>
-   <td>–
-</p>
-   </td>
+    <th>Weapon</th>
+    <th>Properties</th>
+    <th>Damage</th>
+    <th>Size</th>
   </tr>
   <tr>
-   <td>Quarterstaff
-</p>
-   </td>
-   <td>Range 10 ft(Melee)/30 ft(Ranged), 
-</p>
-   </td>
-   <td>3/6 Blunt Damage
-</p>
-   </td>
-   <td>2
-</p>
-   </td>
+    <td>Punch/Kick</td>
+    <td>Range 5 ft (Melee)</td>
+    <td>2/4</td>
+    <td>–</td>
   </tr>
   <tr>
-   <td>Mace
-</p>
-   </td>
-   <td>Range 5 ft(Melee)/15 ft(Ranged)
-</p>
-   </td>
-   <td>4/8 Blunt Damage
-</p>
-   </td>
-   <td>3
-</p>
-   </td>
+    <td>Quarterstaff</td>
+    <td>Range 10 ft (Melee) / 30 ft (Ranged)</td>
+    <td>3/6 Blunt Damage</td>
+    <td>Big</td>
   </tr>
   <tr>
-   <td>Dagger
-</p>
-   </td>
-   <td>Melee, Range 5 ft(Melee)/40 ft(Ranged)
-</p>
-   </td>
-   <td>2/4 Sharp Damage
-</p>
-   </td>
-   <td>1
-</p>
-   </td>
+    <td>Mace</td>
+    <td>Range 5 ft (Melee) / 15 ft (Ranged)</td>
+    <td>4/8 Blunt Damage</td>
+    <td>Medium</td>
   </tr>
   <tr>
-   <td>Big Hammer
-</p>
-   </td>
-   <td>Range 5 ft(Melee)/15 ft(Ranged), Big
-</p>
-   </td>
-   <td>5/10 Blunt Damage
-</p>
-   </td>
-   <td>3
-</p>
-   </td>
+    <td>Dagger</td>
+    <td>Melee, Range 5 ft (Melee) / 40 ft (Ranged)</td>
+    <td>2/4 Sharp Damage</td>
+    <td>Small(12)</td>
   </tr>
   <tr>
-   <td>Normal Sized Sword
-</p>
-   </td>
-   <td>Range 5 ft(Melee)/20 ft(Ranged), Small
-</p>
-   </td>
-   <td>3/6 Sharp Damage
-</p>
-   </td>
-   <td>2
-</p>
-   </td>
+    <td>Big Hammer</td>
+    <td>Range 5 ft (Melee) / 15 ft (Ranged)</td>
+    <td>5/10 Blunt Damage</td>
+    <td>Big</td>
   </tr>
   <tr>
-   <td>Oversized Sword
-</p>
-   </td>
-   <td>Range 5 ft(Melee)/10 ft(Ranged), Big
-</p>
-   </td>
-   <td>5/10 Sharp Damage
-</p>
-   </td>
-   <td>4
-</p>
-   </td>
+    <td>Normal Sized Sword</td>
+    <td>Range 5 ft (Melee) / 20 ft (Ranged)</td>
+    <td>3/6 Sharp Damage</td>
+    <td>Big</td>
   </tr>
   <tr>
-   <td>Spear
-</p>
-   </td>
-   <td>Melee, Range 10 ft(Melee)/30 ft(Ranged), Small
-</p>
-   </td>
-   <td>3/6 Sharp Damage
-</p>
-   </td>
-   <td>2
-</p>
-   </td>
+    <td>Oversized Sword</td>
+    <td>Range 5 ft (Melee) / 10 ft (Ranged)</td>
+    <td>5/10 Sharp Damage</td>
+    <td>Big</td>
   </tr>
   <tr>
-   <td>Hatchet
-</p>
-   </td>
-   <td>Range 5 ft(Melee)/40 ft(Ranged), Small
-</p>
-   </td>
-   <td>2/4 Sharp Damage
-</p>
-   </td>
-   <td>1
-</p>
-   </td>
+    <td>Spear</td>
+    <td>Melee, Range 10 ft (Melee) / 30 ft (Ranged)</td>
+    <td>3/6 Sharp Damage</td>
+    <td>Medium</td>
   </tr>
   <tr>
-   <td>Big Axe
-</p>
-   </td>
-   <td>Range 5 ft(Melee)/15 ft(Ranged), Big
-   </td>
-   <td>4/8 Sharp Damage
-</p>
-   </td>
-   <td>3
-</p>
-   </td>
+    <td>Hatchet</td>
+    <td>Range 5 ft (Melee) / 40 ft (Ranged)</td>
+    <td>2/4 Sharp Damage</td>
+    <td>Small(12)</td>
   </tr>
   <tr>
-   <td>Bolas
-</p>
-   </td>
-   <td>30 ft(Ranged), Entangling, Small
-</p>
-   </td>
-   <td>–
-</p>
-   </td>
-   <td>1
-</p>
-   </td>
+    <td>Big Axe</td>
+    <td>Range 5 ft (Melee) / 15 ft (Ranged)</td>
+    <td>4/8 Sharp Damage</td>
+    <td>Big</td>
   </tr>
   <tr>
-   <td>Bow
-</p>
-   </td>
-   <td>Range 60 ft, Light, Ammunition (Arrows)
-</p>
-   </td>
-   <td>3/6 Sharp Damage
-</p>
-   </td>
-   <td>2
-</p>
-   </td>
+    <td>Bolas</td>
+    <td>30 ft (Ranged), Entangling</td>
+    <td>–</td>
+    <td>Small(4)</td>
   </tr>
   <tr>
-   <td>Boomerang
-</p>
-   </td>
-   <td>Range 5 ft(Melee)/40 ft(Ranged), Small,Recall
-</p>
-   </td>
-   <td>2/4 Blunt Damage
-</p>
-   </td>
-   <td>1
-</p>
-   </td>
+    <td>Bow</td>
+    <td>Range 60 ft, Light, Ammunition (Arrows)</td>
+    <td>3/6 Sharp Damage</td>
+    <td>Medium</td>
   </tr>
   <tr>
-   <td>Meteor Hammer
-</p>
-   </td>
-   <td>Range 25 ft, Light
-</p>
-   </td>
-   <td>3/6 Blunt Damage
-</p>
-   </td>
-   <td>1
-</p>
-   </td>
+    <td>Boomerang</td>
+    <td>Range 5 ft (Melee) / 40 ft (Ranged), Small, Recall</td>
+    <td>2/4 Blunt Damage</td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>Meteor Hammer</td>
+    <td>Range 25 ft, Light</td>
+    <td>3/6 Blunt Damage</td>
+    <td>Medium</td>
   </tr>
 </table>
 
-<h1>Armor</1>
+
+
+<h1>Armor</h1>
 
 <h2>Armor Properties</h2>
 <p>Armor's benefits apply only while worn and may impact movement speed and equip slots:</p>
@@ -391,73 +269,84 @@ Weapons that do not possess the Recall trait and are used in ranged attacks must
     <li>Held: Takes up 1 hand slot.</li>
     <li>Strapped: Limited to one arm.</li>
 </ul>
-<p>
 
-<h2>List of Armor</h2>.
+<h2>List of Armor</h2>
 
 <table>
   <tr>
-   <td><strong>Armor</strong>
-   </td>
-   <td><strong>Properties</strong>
-   </td>
-   <td><strong>Armor Defense</strong>
-   </td>
-   <td><strong>Encumbrance</strong>
-   </td>
+    <th>Armor</th>
+    <th>Properties</th>
+    <th>Benefits</th>
+    <th>Size</th>
   </tr>
   <tr>
-   <td>Tunic
-   </td>
-   <td>Torso
-   </td>
-   <td>+2 Agility Threshold
-   </td>
-   <td>3
-   </td>
+    <td>Tunic</td>
+    <td>Torso</td>
+    <td>+1d6 Evasion</td>
+    <td>Medium</td>
   </tr>
   <tr>
-   <td>Padded Armor
-   </td>
-   <td>Torso
-   </td>
-   <td>+2 Armor Defense
-   </td>
-   <td>4
-   </td>
+    <td>Padded Armor</td>
+    <td>Torso</td>
+    <td>+2 Armor Buffer</td>
+    <td>Medium</td>
   </tr>
   <tr>
-   <td>Robe
-   </td>
-   <td>Torso
-   </td>
-   <td>+2 Wisdom Threshold
-   </td>
-   <td>3
-   </td>
+    <td>Heavy Armor</td>
+    <td>Torso, Heavy</td>
+    <td>+1d6 Toughness, +3 Armor Buffer</td>
+    <td>Big</td>
   </tr>
   <tr>
-   <td>Round Shield
-   </td>
-   <td>Held, Shield
-   </td>
-   <td>+1 Armor Defense
-   </td>
-   <td>1
-   </td>
+    <td>Mage Robe</td>
+    <td>Torso</td>
+    <td>+1d6 Willpower</td>
+    <td>Medium</td>
   </tr>
   <tr>
-   <td>Buckler
-   </td>
-   <td>Strap, Shield
-   </td>
-   <td>+1 Armor Defense
-   </td>
-   <td>1
-   </td>
+    <td>Round Shield</td>
+    <td>Held, Shield</td>
+    <td>+1 Armor Buffer</td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>Buckler</td>
+    <td>Relic</td>
+    <td>+1 Armor Defense</td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>Elemental Cloak</td>
+    <td>Relic, Light</td>
+    <td>Resistant to Elemental Damage (Water, Ice, Fire, Plasma, and Earth)</td>
+    <td>Big</td>
+  </tr>
+  <tr>
+    <td>Nightvision Goggles</td>
+    <td>Head, Relic</td>
+    <td>Grants Night Vision</td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>Ninja Suit</td>
+    <td>Torso, Camouflage</td>
+    <td>+1d6 Sneak</td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>Vine Bracers</td>
+    <td>Arms, Relic</td>
+    <td>+1 Armor Buffer</td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td>Photon Barrier Shield</td>
+    <td>Held</td>
+    <td>+2 Armor Defense, Resistant to Blunt and Sharp damage</td>
+    <td>Big</td>
   </tr>
 </table>
-  
+
 
 
 

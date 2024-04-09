@@ -139,7 +139,7 @@ a {
 
 /* Unvisited links */
 a:link {
-    color: Black; /* Blue color for unvisited links */
+    color: Blue; /* Blue color for unvisited links */
 }
 
 /* Visited links */
